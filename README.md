@@ -1,7 +1,7 @@
 # Evading generated image detectors via STIG-PGD hybrid approach
-## Overview
+## Description
 ## Requirements and Installation
 ## Getting Started
-## Performance
-## Citation
-## License
+## Performance Comparison
+## Related Works
+## Additional Results
