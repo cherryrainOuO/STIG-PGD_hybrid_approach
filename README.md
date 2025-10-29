@@ -140,6 +140,31 @@ The final Refined Fake Image is confirmed to be effective by forcing the VtDIF D
 ## Additional Results
 
 ## Requirements and Installation
+
+We recommend running our code using:
+*NVIDIA GPU + CUDA
+*Python 3, Anaconda
+
+To install our implementation, clone our repository and run following commands to install necessary packages:
+   ```shell script
+conda create -n stig-pgd python=3.13.3
+conda activate stig-pgd
+pip install torch 뭐시기
+pip install -r requirements.txt
+```
+### Preparing Dataset
+Put real and fake datasets in the folder ```datasets/```.
+
+The real images should be located in ```datasets/{dataset_name}/real/```.<br>
+The generated images should be located in ```datasets/{dataset_name}/fake/```.<br>
+We suppose the type of image file is ```.png```.<br>
+And its size is 256 * 256.
+
+We generated the AI images using the Stable Diffusion v1.5 Realistic Vision (SD 1.5 RV) model(https://github.com/lllyasviel/Fooocus).<br>
+For the real dataset, we used cat images from https://www.kaggle.com/datasets/crawford/cat-dataset<br> and human images from https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq?select=00002.png.<br>
+The real and fake datasets must be prepared with an equal number of samples.<br>
+You can generate or acquire images using other Stable Diffusion models, and you should use real images that match the domain of those AI pictures.
+
 ## Getting Started
 ## Reference
 ## Team Introduction
