@@ -142,8 +142,8 @@ The final Refined Fake Image is confirmed to be effective by forcing the ViT, DI
 ## Requirements and Installation
 
 We recommend running our code using:
-*NVIDIA GPU + CUDA
-*Python 3, Anaconda
+* NVIDIA GPU + CUDA
+* Python 3, Anaconda
 
 To install our implementation, clone our repository and run following commands to install necessary packages:
    ```shell script
