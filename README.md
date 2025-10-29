@@ -167,6 +167,10 @@ You can generate or acquire images using other Stable Diffusion models, and you 
 
 ## Getting Started
 ## Reference
+* STIG & ViT https://github.com/ykykyk112/STIG
+* PGD https://github.com/Harry24k/adversarial-attacks-pytorch
+* DIF https://github.com/Sergo2020/DIF_pytorch_official
+
 ## Team Introduction
 | Name | Student ID | Major |
 | :--- | :--- | :--- |
