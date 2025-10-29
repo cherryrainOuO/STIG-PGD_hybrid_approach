@@ -158,19 +158,61 @@ Put real and fake datasets in the folder ```datasets/```.
 The real images should be located in ```datasets/{dataset_name}/real/```.<br>
 The generated images should be located in ```datasets/{dataset_name}/fake/```.<br>
 We suppose the type of image file is ```.png```.<br>
-And its size is 256 * 256.
+And its size is 256 * 256.<br>
+The real and fake datasets must be prepared with an equal number of samples.<br>
 
 We generated the AI images using the Stable Diffusion v1.5 Realistic Vision (SD 1.5 RV) model(https://github.com/lllyasviel/Fooocus).<br>
 For the real dataset, we used cat images from https://www.kaggle.com/datasets/crawford/cat-dataset<br> and human images from https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq?select=00002.png.<br>
-The real and fake datasets must be prepared with an equal number of samples.<br>
 You can generate or acquire images using other Stable Diffusion models, and you should use real images that match the domain of those AI pictures.
 
 ## Getting Started
-## Reference
-* STIG & ViT https://github.com/ykykyk112/STIG
-* PGD https://github.com/Harry24k/adversarial-attacks-pytorch
-* DIF https://github.com/Sergo2020/DIF_pytorch_official
 
+### Training
+
+**Precautions**
+*
+```shell script
+python train.py --size 256 --data {dataset_name} --epoch 10 --batch_size 1 --lr 0.00008 --device {gpu_ids} --dst {experiment_name}
+```
+Enter the command. You can change the GPU device by modifying the option ```--device```.<br>
+
+The sampled results are visualized in the ```results/{experiment_name}/sample/``` during the training.<br> 
+
+After training, the results image and magnitude spectrum will be saved at each folder in ```results/{experiment_name}/eval/```.<br>
+
+Inside the ```eval``` folder, you will find three subfolders: ```clean```, ```denoised```, and ```noise```. The ```clean``` folder contains the original real images, the ```noise``` folder contains the original AI-generated images, and the ```denoised``` folder contains the refined AI images.
+### Inference
+```shell script
+python inference.py --size 256 --inference_data datasets\{inference_dataset_name}\fake --device {gpu_ids} --inference_params results\{experiment_name}\parameters_{}_epoch.pt --dst {experiment_name}
+```
+Enter the command.
+
+The inference results are saved at ```results/{experiment_name}/inference/```.<br>
+
+Put the folder path of the inference data into ```--inference_data```.<br>
+
+And also put the path of model parameters onto ```--inference_params```.<br>
+
+Inside the ```inference``` folder, you will find two subfolders: ```noise```, and ```denoised```. The ```noise``` folder contains the original AI-generated images, and the ```denoised``` folder contains the refined AI images.
+
+### Detection(Evaluation)
+We have prepared two detectors: the ViT and DIF detectors.
+
+**ViT**
+```shell script
+python detect.py --is_train False --classifier vit --lr 0.0002 --size 256 --device {gpu_ids} --class_batch_size 32 --dst {experiment_name} --eval_root results\{experiment_name}\inference\denoised
+```
+
+
+**DIF**
+```shell script
+
+```
+## Reference
+| Type | Title & Source | GitHub / Codebase |
+| :--- | :--- | :--- |
+| **STIG** (Base Method) | Lee, S., Jung, S. W., & Seo, H. (2024). **Spectrum translation for refinement of image generation (STIG) based on contrastive learning and spectral filter profile.** *In Proceedings of the AAAI Conference on Artificial Intelligence.* | [ykykyk112/STIG](https://github.com/ykykyk112/STIG) |
+| **PGD** (Codebase) | Madry, A., et al. (2018). **Towards deep learning models resistant to adversarial attacks.** *In International Conference on Learning Representations (ICLR).* <br> (Implementation used for this project) | [Harry24k/adversarial-attacks-pytorch](https://github.com/Harry24k/adversarial-attacks-pytorch/tree/master) |
 ## Team Introduction
 | Name | Student ID | Major |
 | :--- | :--- | :--- |
