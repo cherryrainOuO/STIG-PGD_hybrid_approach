@@ -139,6 +139,14 @@ The final Refined Fake Image is confirmed to be effective by forcing the ViT, DI
 
 ## Additional Results
 
+<p align="center">
+<img width="80%" alt="1_8400" src="https://github.com/user-attachments/assets/8507f27a-e9a5-4cb3-be8f-50d1b610bef8" />
+<img width="80%" alt="1_8300" src="https://github.com/user-attachments/assets/4ce1bbcf-2442-42da-97a9-6d7c9c9f2b03" />
+<img width="80%" alt="1_8200" src="https://github.com/user-attachments/assets/47cdf877-cd6f-42a1-b04e-d5b898d790b8" />
+<img width="80%" alt="1_8100" src="https://github.com/user-attachments/assets/73c624b4-aeb6-4840-a020-9e495e0eb66d" />
+
+</p>
+
 ## Requirements and Installation
 
 We recommend running our code using:
