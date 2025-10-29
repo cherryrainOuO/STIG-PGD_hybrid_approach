@@ -169,8 +169,6 @@ You can generate or acquire images using other Stable Diffusion models, and you 
 
 ### Training
 
-**Precautions**
-*
 ```shell script
 python train.py --size 256 --data {dataset_name} --epoch 10 --batch_size 1 --lr 0.00008 --device {gpu_ids} --dst {experiment_name}
 ```
