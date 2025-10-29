@@ -1,4 +1,4 @@
-# Attacking Fake Image Detectors with STIG-PGD
+# Attacking Fake-Image Detectors with STIG-PGD
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/7a03e788-baa7-4ce7-9a09-a8286cd6b6a0" alt="Result 1" width="80%">
@@ -204,8 +204,9 @@ python detect.py --is_train False --classifier vit --lr 0.0002 --size 256 --devi
 
 **DIF**
 ```shell script
-
+python detect.py --is_train False --classifier dif --lr 0.0002 --size 256 --device {gpu_ids} --class_batch_size 32 --dst {experiment_name} --eval_root results\{experiment_name}\inference\denoised
 ```
+
 ## Reference
 | Type | Title & Source | GitHub / Codebase |
 | :--- | :--- | :--- |
