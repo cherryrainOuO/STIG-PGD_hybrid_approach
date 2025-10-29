@@ -1,24 +1,10 @@
 # Attacking Fake Image Detectors with STIG-PGD
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/7a03e788-baa7-4ce7-9a09-a8286cd6b6a0" alt="Result 1" width="48%">
-    &nbsp; &nbsp; 
-    <img src="https://github.com/user-attachments/assets/5bc153d1-5140-4062-a365-8cf8aba23389" alt="Result 2" width="48%">
-</p>
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/853d8507-81cc-4dca-ae74-c32cfd47e7fa" alt="Result 3" width="48%">
-    &nbsp; &nbsp; 
-    <img src="https://github.com/user-attachments/assets/f5610820-a9e2-428f-9b27-fdbf669e67fa" alt="Result 4" width="48%">
-</p>
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/77edcbc0-b746-4c97-9017-db8786bc6590" alt="Result 5" width="48%">
-    &nbsp; &nbsp; 
-    <img src="https://github.com/user-attachments/assets/0cbf35ce-5888-4d3c-bec1-d882b9dd1327" alt="Result 6" width="48%">
-</p>
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/57d7eea8-e8c5-4ce6-bdd3-80c8b07ba0c6" alt="Result 7" width="48%">
-    &nbsp; &nbsp; 
-    <img src="https://github.com/user-attachments/assets/fae1c8b8-e3f2-454d-b748-5914ce429802" alt="Result 8" width="48%">
+    <img src="https://github.com/user-attachments/assets/7a03e788-baa7-4ce7-9a09-a8286cd6b6a0" alt="Result 1" width="80%">
+    <img src="https://github.com/user-attachments/assets/853d8507-81cc-4dca-ae74-c32cfd47e7fa" alt="Result 3" width="80%">
+    <img src="https://github.com/user-attachments/assets/77edcbc0-b746-4c97-9017-db8786bc6590" alt="Result 5" width="80%">
+    <img src="https://github.com/user-attachments/assets/57d7eea8-e8c5-4ce6-bdd3-80c8b07ba0c6" alt="Result 7" width="80%">
 </p>
 
 ## Description
