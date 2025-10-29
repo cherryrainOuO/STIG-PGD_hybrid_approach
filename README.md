@@ -53,7 +53,7 @@ This step strategically combines the STIG and PGD results to mitigate noise. It 
 
 **4. Evasion Verification**
 
-The final Refined Fake Image is confirmed to be effective by forcing the VtDIF Detector to misclassify it as Real.
+The final Refined Fake Image is confirmed to be effective by forcing the ViT, DIF Detector to misclassify it as Real.
 
 <p align="center">
 <img width="321" height="113" alt="image" src="https://github.com/user-attachments/assets/e8ef8ffd-2251-4780-897b-a43596edf372" />
